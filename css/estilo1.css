@@ -1,0 +1,269 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+
+}
+.margen-interno{
+    padding: 0 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    background: url(../imagenes/fondo.jpg);
+    background-position: center;
+    background-attachment:contain;
+    background-size: cover;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+    .menu{
+        background: rgb(0,0,0,.1);
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100px;
+        align-items: center;
+        border-bottom: 1px solid rgba(255,255,255,.5)
+    }
+
+    .logo{
+        flex: 1 1 auto;
+    }
+    
+    .logo a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 30px;
+    }
+
+    .logo a:hover {
+        color:#343434;
+    }
+    .nav{
+        flex: 5 1 auto;
+        
+    }
+    .nav a {
+        color: #fff;
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 0 10px;
+        letter-spacing: 2px;
+    }
+    .nav a:hover {
+        color:#343434;
+    }
+    
+    .social {
+        flex: 1 1 auto; 
+        display: flex;   
+    }
+        .social a {
+            font-size: 25px;
+            color: #ffff;
+            padding: 0 5px;
+        }
+
+        .social a:hover{
+            color:#343434;
+        }
+
+
+    .banner{
+        margin: auto;
+        width: 700px;
+        height: 600px;
+        
+        background-size: 100% 100%;
+        animation: banner 10s infinite;
+        animation-direction: alternate;
+
+    }
+ 
+    
+    
+@keyframes banner {
+    0%, 30%  {
+        background-image: url(../imagenes/todo_bien.jpg);
+        opacity: 1;
+        }
+    31%, 34%{
+        opacity: 0.1;
+    }    
+    35%, 65%  {
+        background-image: url(../imagenes/trabajo.jpg);
+        opacity: 1;
+    }
+    66%, 69%{
+        opacity: 0.1;
+    }
+    70%, 100% {
+        background-image: url(../imagenes/trabajo3.jpg);
+        opacity: 1;
+    }
+  
+}
+
+
+
+
+    .texto-principal {
+        height: 580px;
+        display: flex;
+        align-items: center;
+    }
+
+    .texto-principal img {
+        width: auto;
+        align-content: center;
+    }
+        h1{
+            color: rgb(163, 14, 89);
+            font-family: 'Lora', serif; 
+            font-weight: 300;
+            text-align: center;
+            line-height: 1.6;
+            text-transform: uppercase;
+            text-shadow: lightcyan;
+            
+        }
+
+        h3{
+            color: rgb(71, 27, 62);
+            font-family: 'Lora', serif; 
+            font-weight: 300;
+            font-size: 24px;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .form {
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+          }
+          
+          
+          .form input {
+            padding:10px;
+            height: 30px;
+            margin: 0.5rem;
+          }
+          
+          .form button {
+            padding: 0.5em 1em;
+            border: none;
+            background: rgb(238, 244, 247);
+            cursor: pointer;
+            display: inline;
+          }
+    
+            
+        .field{
+            border: solid 1px #ccc;
+            padding: 10px;
+        }
+        .field:focus{
+            border-color: violet;
+
+        }
+
+.section {
+    background: #f7f7f7;
+    display: flex;
+}
+    .articulos {
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+     }
+        .article{
+            flex: 1 1 40%;
+            color:#444;
+            font-size: 13px;
+            letter-spacing: 1px;
+            margin: 10px 10px 0 0px;
+            flex: 1 1 45%;
+            background: #ececec;
+        }
+        .article img{
+            width: 100%;
+            empty-cells: hide;
+        }
+        
+        h4{
+            font-family: 'Lora', serif;
+            font-size: 13px;
+            text-transform: uppercase;
+            padding: 0px 0 10px 0;
+            color: rgb(48, 46, 46);
+            margin-top: -80px;
+        }
+
+.footer{
+    background: rgb(170, 166, 214);
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    }
+    .pie{
+        text-align:left;
+        
+    }
+
+    .pie p {
+        color: rgb(43, 40, 43);
+        font-family: 'Lora', serif;
+        font-size: 18px;
+        text-align: left;
+
+    }
+
+@media all and (max-width:1120px){
+    .section {
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction: column;
+        height: auto;
+    }
+    h1{
+        font-size: 15px;
+    }
+    .texto-principal{
+        height: 450px;
+    }
+}
+
+@media all and (max-width:762px){
+    .articulos{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 15px;
+    }
+}
+
+@media all and (max-width: 650px){
+    
+
+}
+
+    
